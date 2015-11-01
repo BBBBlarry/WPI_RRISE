@@ -7,9 +7,20 @@
 //
 
 #include <iostream>
+#include <stdio.h>
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+#include "./src/WPI_RRISE.h"
+#include "./src/Robot_Mimic_Control.h"
+
+#include "RRISE_Bot.cpp"
+
+int main(){
+    
+    Robot_Mimic_Control control = *new Robot_Mimic_Control(*new RRISE_Bot());
+    
+    control.StartGame();
+    control.StartAuto(10);
+    control.StartTeleop(-1);
+    
     return 0;
 }
