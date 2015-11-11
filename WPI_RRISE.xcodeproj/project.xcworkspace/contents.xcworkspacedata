@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:../WPI_RRISE/src/IterativeRobot.cpp">
+   </FileRef>
+   <FileRef
       location = "self:WPI_RRISE.xcodeproj">
    </FileRef>
 </Workspace>

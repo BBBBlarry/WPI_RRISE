@@ -7,7 +7,6 @@
 //
 
 #include <iostream>
-#include <stdio.h>
 
 #include "./src/WPI_RRISE.h"
 #include "./src/Robot_Mimic_Control.h"
@@ -16,11 +15,11 @@
 
 int main(){
     
-    Robot_Mimic_Control control = *new Robot_Mimic_Control(*new RRISE_Bot());
+    Robot_Mimic_Control* control = new Robot_Mimic_Control(new RRISE_Bot());
     
-    control.StartGame();
-    control.StartAuto(10);
-    control.StartTeleop(-1);
+    control->StartGame();
+    control->StartAuto(10);
+    control->StartTeleop(-1);
     
     return 0;
 }

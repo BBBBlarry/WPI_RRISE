@@ -7,8 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA32269C1BF377BA006921DF /* RobotDrive.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA32269B1BF377BA006921DF /* RobotDrive.cpp */; };
+		FA3226A11BF39198006921DF /* IterativeRobot.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA3226A01BF39198006921DF /* IterativeRobot.cpp */; };
 		FA4BA5CE1BE6C52900C1AC16 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA4BA5CD1BE6C52900C1AC16 /* main.cpp */; };
 		FA4BA5D51BE6C5A900C1AC16 /* RRISE_Bot.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA4BA5D41BE6C5A900C1AC16 /* RRISE_Bot.cpp */; };
+		FA9504B21BF2A41900821397 /* Joystick.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA9504B11BF2A41900821397 /* Joystick.cpp */; };
+		FA9504B41BF3770800821397 /* Robot_Mimic_Control.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA9504B31BF3770800821397 /* Robot_Mimic_Control.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,6 +28,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		FA32269B1BF377BA006921DF /* RobotDrive.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RobotDrive.cpp; path = src/RobotDrive.cpp; sourceTree = "<group>"; };
+		FA3226A01BF39198006921DF /* IterativeRobot.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IterativeRobot.cpp; path = src/IterativeRobot.cpp; sourceTree = "<group>"; };
 		FA4BA5CA1BE6C52900C1AC16 /* WPI_RRISE */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = WPI_RRISE; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA4BA5CD1BE6C52900C1AC16 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		FA4BA5D41BE6C5A900C1AC16 /* RRISE_Bot.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RRISE_Bot.cpp; sourceTree = "<group>"; };
@@ -32,6 +38,8 @@
 		FA4BA5D91BE6C68200C1AC16 /* Robot_Mimic_Control.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Robot_Mimic_Control.h; path = src/Robot_Mimic_Control.h; sourceTree = "<group>"; };
 		FA4BA5DA1BE6C6A200C1AC16 /* RobotDrive.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RobotDrive.h; path = src/RobotDrive.h; sourceTree = "<group>"; };
 		FA4BA5DB1BE6C6BA00C1AC16 /* WPI_RRISE.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = WPI_RRISE.h; path = src/WPI_RRISE.h; sourceTree = "<group>"; };
+		FA9504B11BF2A41900821397 /* Joystick.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Joystick.cpp; path = src/Joystick.cpp; sourceTree = "<group>"; };
+		FA9504B31BF3770800821397 /* Robot_Mimic_Control.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Robot_Mimic_Control.cpp; path = src/Robot_Mimic_Control.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,10 +74,14 @@
 			children = (
 				FA4BA5CD1BE6C52900C1AC16 /* main.cpp */,
 				FA4BA5D41BE6C5A900C1AC16 /* RRISE_Bot.cpp */,
+				FA9504B11BF2A41900821397 /* Joystick.cpp */,
 				FA4BA5D71BE6C60F00C1AC16 /* Joystick.h */,
+				FA9504B31BF3770800821397 /* Robot_Mimic_Control.cpp */,
 				FA4BA5D81BE6C63500C1AC16 /* IterativeRobot.h */,
+				FA3226A01BF39198006921DF /* IterativeRobot.cpp */,
 				FA4BA5D91BE6C68200C1AC16 /* Robot_Mimic_Control.h */,
 				FA4BA5DA1BE6C6A200C1AC16 /* RobotDrive.h */,
+				FA32269B1BF377BA006921DF /* RobotDrive.cpp */,
 				FA4BA5DB1BE6C6BA00C1AC16 /* WPI_RRISE.h */,
 			);
 			path = WPI_RRISE;
@@ -131,8 +143,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA3226A11BF39198006921DF /* IterativeRobot.cpp in Sources */,
+				FA9504B41BF3770800821397 /* Robot_Mimic_Control.cpp in Sources */,
 				FA4BA5CE1BE6C52900C1AC16 /* main.cpp in Sources */,
 				FA4BA5D51BE6C5A900C1AC16 /* RRISE_Bot.cpp in Sources */,
+				FA32269C1BF377BA006921DF /* RobotDrive.cpp in Sources */,
+				FA9504B21BF2A41900821397 /* Joystick.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +265,7 @@
 				FA4BA5D31BE6C52900C1AC16 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

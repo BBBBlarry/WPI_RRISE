@@ -14,39 +14,20 @@
 class Robot_Mimic_Control{
 public:
     
-    Robot_Mimic_Control(IterativeRobot i_bot){
-        robot = i_bot;
-    }
-    
-    IterativeRobot robot;
-    
-    
+    Robot_Mimic_Control(IterativeRobot* i_bot);
+    IterativeRobot* robot;
     
     /*
      * You should always startGame() before start any other state
      */
-    void StartGame(void){
-        robot.RobotInit();
-    }
+    void StartGame(void);
     
     
     /*
      * startAuto() will run until the cycles are ran
      * if cycle is -1, the robot will always be at auto state
      */
-    void StartAuto(int cycle){
-        robot.AutonomousInit();
-        if(cycle == -1){
-            while(true){
-                robot.AutonomousPeriodic();
-            }
-        }else{
-            for(int i = 0; i < cycle; i++){
-                robot.AutonomousPeriodic();
-            }
-        }
-        
-    }
+    void StartAuto(int);
     
     
     /*
@@ -54,21 +35,7 @@ public:
      * if cycle is -1, the robot will always be at auto state
      */
     
-    void StartTeleop(int cycle){
-        robot.TeleopInit();
-        if(cycle == -1){
-            while(true){
-                robot.TeleopPeriodic();
-            }
-        }else{
-            for(int i = 0; i < cycle; i++){
-                robot.TeleopPeriodic();
-            }
-        }
-    }
-    
-
-    
+    void StartTeleop(int);
 };
 
 #endif

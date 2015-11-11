@@ -14,47 +14,19 @@
 
 class Joystick{
     
-    /*
-     Prefix:
-     c - control
-     no prefix - WPI
-     */
-    
 public:
     
-    Joystick(int cha){
-        channel = cha;
-        x = 0;
-        y = 0;
-    }
+    Joystick(int cha);
     
-    float GetX(void){
-        return x;
-    }
-    
-    float GetY(void){
-        return y;
-    }
-    
+    float GetX(void);
+    float GetY(void);
     
     /*** control ***/
-    void c_PushJoystick(void){
-        
-        float c_x;
-        float c_y;
-        
-        std::cout << "Joystick (x,y): ";
-        std::cin >> c_x >> c_y;
-        
-        x = c_x;
-        y = c_y;
-    }
-    
-    
-    
+    void c_PushJoystick(void);
     
     
 private:
+    
     float x, y;
     int channel;
 };

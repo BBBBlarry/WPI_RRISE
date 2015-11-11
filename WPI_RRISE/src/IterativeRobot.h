@@ -11,6 +11,9 @@
 
 class IterativeRobot{
 public:
+    IterativeRobot(void);
+    ~IterativeRobot(void);
+    
     virtual void RobotInit(void);
     virtual void AutonomousInit(void);
     virtual void TeleopInit(void);

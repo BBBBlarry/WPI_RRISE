@@ -6,47 +6,63 @@
 //  Copyright (c) 2015 RRISE. All rights reserved.
 //
 
-#include <stdio.h>
+
 #include "./src/WPI_RRISE.h"
+//#include "RRISE_Bot.h"
 
 class RRISE_Bot: public IterativeRobot{
+    
 private:
+    
     // Driver joystick
     Joystick *driveJoystick;
     RobotDrive *robot;
     
+    
 public:
+    
     RRISE_Bot(void){
+        
         driveJoystick = new Joystick(1);
         
         // Create a robot using standard right/left robot drive on PWM 1, 2, 3, and 4
         robot = new RobotDrive(1, 3, 2, 4);
+    
     }
-    
-    
+
+    ~RRISE_Bot(void){
+        //self-destruction
+    }
+
     /********** init ********/
     void RobotInit(void){
         //Robot-wide initialization code should go here.
     }
-    
+
     void AutonomousInit(void){
         //Initialization code for autonomous mode should go here.
     }
-    
+
     void TeleopInit(void){
         //Initialization code for teleop mode should go here.
     }
-    
-    
-    
+
+
+
     /********** periodic ********/
     void AutonomousPeriodic(void){
         //drive forward with motor speed 0.1
         robot->Drive(0.1, 0);
     }
-    
+
     void TeleopPeriodic(void){
         //use driveJoystick to arcade drive in squaredInputs
         robot->ArcadeDrive(driveJoystick, true);
     }
+
 };
+
+/** You need the following line in real WPI Lib, but in the WPI_RRISE, you don't.**/
+//START_ROBOT_CLASS(RRISE_Bot);
+
+

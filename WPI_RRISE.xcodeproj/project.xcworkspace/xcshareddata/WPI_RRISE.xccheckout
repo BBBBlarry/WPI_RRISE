@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>2AB68CB1-1652-44B5-A5A7-D0E82CB26A2A</string>
+	<key>IDESourceControlProjectName</key>
+	<string>WPI_RRISE</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>D03E8A1945C9CF8F3EF11F8735D2FEEBE819440A</key>
+		<string>https://github.com/BBBBlarry/WPI_RRISE.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>WPI_RRISE.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>D03E8A1945C9CF8F3EF11F8735D2FEEBE819440A</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/BBBBlarry/WPI_RRISE.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>D03E8A1945C9CF8F3EF11F8735D2FEEBE819440A</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D03E8A1945C9CF8F3EF11F8735D2FEEBE819440A</string>
+			<key>IDESourceControlWCCName</key>
+			<string>WPI_RRISE</string>
+		</dict>
+	</array>
+</dict>
+</plist>
